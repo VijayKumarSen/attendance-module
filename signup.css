@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--body-color);
+}
+:root{
+    --navbar-color:black;
+    --navbar-text-color:white;
+    --body-color:white;
+    --body-text-color :white;
+    --button-color : black;
+    --button-hover-color:white;
+    --button-text-color: white;
+    --footer-background-color :black;
+    --footer-text-color:white;
+    --input-border: 1px solid black;
+    --header-text-color: white;
+    --footer-box-color:black;
+}
+#navBar{
+     padding: 5px;
+     display: flex;
+     justify-content: flex-end;
+     position: fixed;
+     top: 0;
+     width: 100%;
+     background-color: var(--navbar-color);
+}
+#navBar ul{
+    padding: 10px;
+    display: flex;
+    margin-left: auto;
+    width: 350px;
+    gap: 60px;
+}
+#navBar ul li{
+    padding: 10px;
+    display: inline-block;
+}
+#navBar ul li a{
+    text-decoration: none;
+    color: var(--navbar-text-color);
+}
+#navBar ul li a:hover{
+    text-decoration: underline;
+}
+.signupContainer{
+    padding: 50px;
+    width: 600px;
+    height: 400px;
+    margin-top: 200px;
+    margin-left: 450px;
+}
+h2{
+    text-align: center;
+    color: black;
+}
+form{
+    margin-top: auto;
+    gap: 20px;
+    width: 500px;
+    height: 400px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color-form);
+    box-shadow: 5px 10px 10px rgba(22, 17, 17, 0.23);
+}
+form input{
+    padding: 10px;
+    border-radius: 15px;
+    border: var(--input-border);
+    width: 300px;
+}
+button{
+    padding: 10px;
+    align-self: center;
+    width: 90px;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--button-color);
+    color: var(--button-text-color);
+}
+a{
+    text-decoration: none;
+    font-size: 14px;
+    color: var(--button-color);
+}
+a:hover{
+    text-decoration: underline;
+}

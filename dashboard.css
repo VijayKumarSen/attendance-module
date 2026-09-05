@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* https://hr-dashboard-kit-code.vercel.app/ */
+}
+    :root{
+    --navbar-color:black;
+    --navbar-text-color:white;
+    --body-color:white;
+    --body-text-color :white;
+    --button-color : black;
+    --button-hover-color:white;
+    --button-text-color: white;
+    --footer-background-color :black;
+    --footer-text-color:white;
+    --header-background-color:white;
+    --header-text-color: white;
+    --footer-box-color:black;
+    --text-color: black;
+    --quick-link-color: white;
+    --quick-link-header-color: black;
+}
+
+body{
+    background-color: var(--body-color);
+    font-family: Arial, sans-serif;
+}
+
+/* START DASHBOARD CONTAINER */
+.dashboard-container{
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100vw;
+    border: 1px solid black;
+}
+/* END DASHBOARD CONTAINER */
+
+/* START DASHBOARD HEADER */
+.dashboard-header{
+    padding: 20px;
+    width:90vw;
+    height: 10vh;
+    margin-top: 20px;
+    border-radius: 50px;
+    align-self: center;
+    background-color: var(--header-background-color);
+    color: var(--text-color);
+    box-shadow: 10px 14px 6px rgba(0, 0, 0, 0.1);
+}
+.button-container{
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    margin: 0;
+}
+.button-container button{
+   padding: 5px 15px;
+   border-radius: 20px;
+   box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.679);
+   background-color: var(--button-color);
+   color: var(--button-text-color);
+   border: 1px solid var(--button-color);
+}
+/* END DASHBOARD HEADER */
+
+/* START DASHBOARD CONTENT */
+.dashboard-content{
+    width: 90vw;
+    height: 70vh;
+    gap: 20px;
+    display: flex;
+    margin-top: 20px;
+    align-self: center;
+}
+.dashboard-content-left{
+    width: 15vw;
+    padding: 20px;
+    overflow : scroll;
+    scrollbar-width: none;
+    border-radius: 15px;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.236);
+}
+.dashboard-content-left h3{
+    position: sticky;
+    top: 0;
+    padding: 2px 10px;
+    border-radius: 15px;
+    border: 1px solid black;
+    font-weight: 100;
+    box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.236);
+    background-color: var(--quick-link-header-color);
+    color: var(--quick-link-color);
+}
+.dashboard-content-left ul{
+    margin-top: 30px;
+    list-style-type: none;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.dashboard-content-left ul li{
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.236);
+}
+.dashboard-content-left ul li a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+.dashboard-content-left ul li:hover{
+    background-color: rgb(192, 189, 189);
+    color: white;
+}
+.dashboard-content-right{
+    width: 70vw;
+    padding: 20px;
+    overflow: scroll;
+    scrollbar-width: none;
+    border-radius: 15px;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.236);
+}
+.dashboard-content-right-cardbox{
+ width: 65vw;
+ height: 30vh;
+ display: flex;
+ gap: 20px;
+ align-items: center;
+ justify-content: center;
+}
+.dashboard-content-right-card{
+  width: 10vw;
+  height: 20vh;
+  border-radius: 15px;
+  border: 1px solid black;
+  border-color: rgb(175, 165, 165);
+  box-shadow: 0px 10px 6px 5px rgba(0, 0 , 0, 0.236);
+}
+/* END DASHBOARD CONTENT */
+
+/* START MAIN BOX */
+   .main-box{
+    width: 65vw;
+    height: 35vh;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    overflow: scroll;
+    scrollbar-width: none;
+   }
+   .main-box-card{
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 2px 2px 6px grey;
+    margin: auto;
+    width: 15vw;
+    height: 5vh;
+  }
+/* END MAIN BOX */
